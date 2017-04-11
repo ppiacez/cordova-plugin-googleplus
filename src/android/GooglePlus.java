@@ -47,6 +47,7 @@ public class GooglePlus extends CordovaPlugin implements GoogleApiClient.OnConne
 
     public static final String TAG = "GooglePlugin";
     public static final int RC_GOOGLEPLUS = 77552; // Request Code to identify our plugin's activities
+    private String lastAccessToken = null;
 
     // Wraps our service connection to Google Play services and provides access to the users sign in state and Google APIs
     private GoogleApiClient mGoogleApiClient;
